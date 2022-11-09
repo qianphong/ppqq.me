@@ -1,21 +1,22 @@
 <script lang="ts" setup>
 import '@unocss/reset/tailwind.css'
+import '~/styles/main.css'
+
+useHead({
+  titleTemplate: '%s - Site Title',
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/nuxt.png',
+    },
+  ],
+})
 </script>
 
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>

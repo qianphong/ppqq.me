@@ -2,8 +2,8 @@
 
 <template>
   <Header />
-  <main pt-15>
+  <main>
     <slot />
   </main>
-  <Footer />
+  <!-- <Footer /> -->
 </template>

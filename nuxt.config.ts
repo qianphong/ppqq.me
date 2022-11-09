@@ -6,5 +6,9 @@ export default defineNuxtConfig({
       name: 'page',
     },
   },
-  modules: ['@unocss/nuxt'],
+  modules: ['@unocss/nuxt', '@nuxtjs/color-mode', '@vueuse/nuxt'],
+  // @ts-expect-error
+  colorMode: {
+    classSuffix: '',
+  },
 })
