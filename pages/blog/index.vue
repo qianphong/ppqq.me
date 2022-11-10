@@ -43,14 +43,22 @@ function doSearch(e?: KeyboardEvent) {
           :value="q"
           placeholder="type word to search"
           @keydown.enter="doSearch"
+          bg-gray-100
+          dark:bg-gray-800
           h-10
           w-full
           px-5
+          outline-none
         />
       </div>
       <div>
         Fetch result:
-        <pre bg-gray-800 p-2><code>{{ data?.data.entries }}</code></pre>
+        <div bg-gray-100 dark:bg-gray-800 p-2>
+          <pre
+            v-if="data?.data.entries"
+          ><code>{{ data?.data.entries }}</code></pre>
+          <div v-else i-carbon:face-activated mx-a my-5 text-3xl text-gray />
+        </div>
       </div>
     </div>
   </div>
