@@ -14,28 +14,43 @@ function getQuery(query: LocationQuery[string]) {
   }
   return query ? query : ''
 }
-const count = computed(() => {
-  return getQuery(route.query.count) || '1'
-})
+
 const q = ref(getQuery(route.query.q) || '')
-watchEffect(() => {
-  router.replace({ query: { q: q.value } })
-})
 
 const { data } = await useFetch(() => `/api/policy`, {
-  params: { num: count, q, doctype: 'json' },
+  params: { q, doctype: 'json', num: 2 },
+  pick: ['data'],
 })
+
+function doSearch(e?: KeyboardEvent) {
+  console.log(e)
+  if (e) {
+    const target = e.target as HTMLInputElement
+    q.value = target.value
+  } else {
+    q.value = ''
+  }
+  router.replace({ query: { q: q.value || undefined } })
+}
 </script>
 
 <template>
   <div pt-20 px-5>
     <div>
-      <div>
-        <input type="text" v-model="q" />
+      <div lg:w-lg mx-a rounded overflow-hidden>
+        <input
+          type="text"
+          :value="q"
+          placeholder="type word to search"
+          @keydown.enter="doSearch"
+          h-10
+          w-full
+          px-5
+        />
       </div>
       <div>
         Fetch result:
-        <pre bg-gray-800 p-2><code>{{ data }}</code></pre>
+        <pre bg-gray-800 p-2><code>{{ data?.data.entries }}</code></pre>
       </div>
     </div>
   </div>

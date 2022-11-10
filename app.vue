@@ -3,7 +3,7 @@ import '@unocss/reset/tailwind.css'
 import '~/styles/main.css'
 
 useHead({
-  titleTemplate: '%s - Site Title',
+  titleTemplate: t => (t ? `${t} - My App` : 'My App'),
   link: [
     {
       rel: 'icon',
