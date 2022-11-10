@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@unocss/nuxt', '@nuxtjs/color-mode', '@vueuse/nuxt'],
-  // @ts-expect-error
   colorMode: {
     classSuffix: '',
   },
