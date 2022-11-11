@@ -2,16 +2,11 @@
 useHead({
   title: 'Hello World',
 })
+
 const locales = useLocales()
 const locale = useLocale()
 const date = useLocaleDate(new Date('2016-10-26') /* NUXT_BIRTHDAY */)
 
-setTimeout(() => {
-  showError({
-    statusCode: 500,
-    message: 'Internal Server Error',
-  })
-}, 2000)
 </script>
 
 <template>
