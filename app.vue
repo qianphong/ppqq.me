@@ -2,11 +2,11 @@
 import '@unocss/reset/tailwind.css'
 import '~/styles/main.css'
 
-const title = 'My App'
+const title = 'ppqq.me'
 
 useHead({
   title,
-  titleTemplate: t => (t !== title ? `${t} - My App` : 'My App'),
+  titleTemplate: t => (t !== title ? `${t} - ppqq.me` : 'ppqq.me'),
   // link: [
   //   {
   //     rel: 'icon',
