@@ -7,11 +7,7 @@ specifiers:
   '@types/canvas-confetti': ^1.6.0
   '@unocss/nuxt': ^0.46.5
   '@vueuse/nuxt': ^9.5.0
-  canvas-confetti: ^1.6.0
   nuxt: 3.0.0
-
-dependencies:
-  canvas-confetti: 1.6.0
 
 devDependencies:
   '@iconify-json/ant-design': 1.1.4
@@ -1623,10 +1619,6 @@ packages:
   /caniuse-lite/1.0.30001431:
     resolution: {integrity: sha512-zBUoFU0ZcxpvSt9IU66dXVT/3ctO1cy4y9cscs1szkPlcWb6pasYM144GqrUygUbT+k7cmUCW61cvskjcv0enQ==}
     dev: true
-
-  /canvas-confetti/1.6.0:
-    resolution: {integrity: sha512-ej+w/m8Jzpv9Z7W7uJZer14Ke8P2ogsjg4ZMGIuq4iqUOqY2Jq8BNW42iGmNfRwREaaEfFIczLuZZiEVSYNHAA==}
-    dev: false
 
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
