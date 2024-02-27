@@ -17,7 +17,7 @@
     <nav flex>
       <div class="spacer" />
       <div flex items-center space-x-5>
-        <NuxtLink to="https://qianphong.github.io" title="Blog">
+        <NuxtLink to="blog.ppqq.me" title="Blog">
           <span class="lt-md:hidden">Blog</span>
           <div i-ri-article-line md:hidden />
         </NuxtLink>
