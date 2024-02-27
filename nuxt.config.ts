@@ -5,6 +5,15 @@ export default defineNuxtConfig({
       mode: 'out-in',
       name: 'page',
     },
+    head: {
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: 'favicon.svg',
+        },
+      ],
+    },
   },
   modules: ['@unocss/nuxt', '@nuxtjs/color-mode', '@vueuse/nuxt'],
   colorMode: {

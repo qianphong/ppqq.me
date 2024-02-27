@@ -8,13 +8,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@iconify-json/ant-design": "^1.1.5",
-    "@iconify-json/carbon": "^1.1.15",
-    "@nuxtjs/color-mode": "^3.2.0",
-    "@types/canvas-confetti": "^1.6.0",
-    "@unocss/nuxt": "^0.49.4",
-    "@vueuse/nuxt": "^9.12.0",
-    "nuxt": "3.2.0"
+    "@iconify-json/ant-design": "^1.1.15",
+    "@iconify-json/carbon": "^1.1.30",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@types/canvas-confetti": "^1.6.4",
+    "@unocss/nuxt": "^0.58.5",
+    "@vueuse/nuxt": "^10.8.0",
+    "nuxt": "3.10.3"
   },
   "dependencies": {
     "scss": "^0.2.4"
